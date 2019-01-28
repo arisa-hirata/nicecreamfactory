@@ -1,0 +1,153 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>NiceCream Factory</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="../jquery.onepage-scroll.js"></script>
+    <link href='../onepage-scroll.css' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crafty+Girls" rel="stylesheet">
+
+
+
+    <script>
+        (function($) {
+            $(function() {
+                var $header = $('#top-head');
+                // Nav Fixed
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() > 350) {
+                        $header.addClass('fixed');
+                    } else {
+                        $header.removeClass('fixed');
+                    }
+                });
+                // Nav Toggle Button
+                $('#nav-toggle').click(function(){
+                    $header.toggleClass('open');
+                });
+            });
+        })(jQuery);
+    </script>
+
+
+	<script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        loop: true,
+        responsiveFallback: false
+      });
+		});
+
+	</script>
+  <!-- <link rel="stylesheet" href="../css/demo.css">
+  <script src="../js/demo.js"></script> -->
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+
+        <header id="top-head" class="header">
+
+                <div class="inner">
+                    <div id="mobile-head">
+                        <a href="index.html"><img src="../img/LOGO-4%20white.png" class="logo"></a>
+                        <div id="nav-toggle">
+                            <div>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                <nav id="global-nav">
+
+                <ul class="navigation_bar">
+                  <li><a href="index.html">&nbsp;&nbsp;Home&nbsp;&nbsp;</a></li>
+                  <li><a href="about.html">&nbsp;&nbsp;About&nbsp;&nbsp;</a></li>
+                  <li><a href="menu.html">&nbsp;&nbsp;Menu&nbsp;&nbsp;</a></li>
+                  <li><a href="gallery.html">&nbsp;&nbsp;Gallery&nbsp;&nbsp;</a></li>
+                  <li><a href="contact.html">&nbsp;&nbsp;Contact&nbsp;&nbsp;</a></li>
+                </ul>
+
+                </nav>
+                </div>
+
+            </header>
+
+	  <div class="main">
+
+
+
+	    <section class="page2">
+	      <div class="page_container">
+
+          <h1>Ice Cream?</h1>
+          <h1>No,</h1>
+          <h1>It's NiceCream!</h1>
+
+
+	      </div>
+
+            <a class="arrow" href=""><span></span>Scroll</a>
+
+
+
+      </section>
+
+	    <section id="page3" class="page3">
+	      <div class="page3_container">
+
+
+              <img src="../img/sample.png" class="sample_photo" alt="ice cream">
+
+              <div class="article">
+
+                  <h2>THE SCOOP ON US</h2>
+
+                    <p>Handcrafted ice cream is our passion. We start our process by combining fresh local grass-fed cream and local ingredients from nearby farms. Using our freezing agent, liquid nitrogen, we freeze the ice cream on the spot in front of our guests, creating the freshest handcrafted cup of ice cream you can get.</p>
+              </div>
+
+  	    </div>
+
+            <footer class="footer">
+
+                <ul>
+
+                <li class="icon">
+                <a href="http://facebook.com/arisa.hirata.79">
+                <img src="../img/facebook.png" alt="Facebook Logo" class="social-icon">
+                </a>
+                </li>
+                <li class="icon">
+                <a href="http://twitter.com/alisapira">
+                <img src="../img/twitter.png" alt="Twitter Logo" class="social-icon"></a>
+                </li>
+                <li class="icon">
+                <a href="http://instagram.com/arisa_pirata">
+                <img src="../img/instagram.png" alt="Instagram Logo" class="social-icon"></a>
+                </li>
+
+            </ul>
+
+            <p><small>&copy; 2017 NiceCream Factory, Inc All rights reserved</small></p>
+
+            </footer>
+
+      </section>
+
+    </div>
+
+  </div>
+
+
+</body>
+</html>

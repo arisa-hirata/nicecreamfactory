@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0">
+	<title>NiceCream Factory</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/contact.css">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Quicksand" rel="stylesheet">
+
+    <script>
+        (function($) {
+            $(function() {
+                var $header = $('#top-head');
+                // Nav Fixed
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() > 350) {
+                        $header.addClass('fixed');
+                    } else {
+                        $header.removeClass('fixed');
+                    }
+                });
+                // Nav Toggle Button
+                $('#nav-toggle').click(function(){
+                    $header.toggleClass('open');
+                });
+            });
+        })(jQuery);
+    </script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+
+        <header id="top-head" class="header">
+
+                <div class="inner">
+                    <div id="mobile-head">
+                        <a href="index.html"><img src="../img/LOGO-4%20white.png" class="logo"></a>
+                        <div id="nav-toggle">
+                            <div>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                <nav id="global-nav">
+
+                <ul class="navigation_bar">
+                  <li><a href="index.html">&nbsp;&nbsp;Home&nbsp;&nbsp;</a></li>
+                  <li><a href="about.html">&nbsp;&nbsp;About&nbsp;&nbsp;</a></li>
+                  <li><a href="menu.html">&nbsp;&nbsp;Menu&nbsp;&nbsp;</a></li>
+                  <li><a href="gallery.html">&nbsp;&nbsp;Gallery&nbsp;&nbsp;</a></li>
+                  <li><a href="contact.html">&nbsp;&nbsp;Contact&nbsp;&nbsp;</a></li>
+                </ul>
+
+                </nav>
+                </div>
+
+            </header>
+
+
+            <div class="contact_container">
+
+
+
+
+            <script src="https://maps.googleapis.com/maps/api/js?key=https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=AIzaSyAKmnc1lAl9jnWU33tyc8ME9rwJajIiyow" type="text/javascript"></script>
+            <script type="text/javascript">
+                var geocoder = new google.maps.Geocoder();
+                var address = "4421 Burke st. Burnaby";
+                geocoder.geocode({'address': address,'language':'ja'},function(results, status){
+                    if (status == google.maps.GeocoderStatus.OK){
+                        var latlng=results[0].geometry.location;
+                        var mapOpt = {
+                            center: latlng,
+                             zoom: 16,
+                            mapTypeId: google.maps.MapTypeId.ROADMAP
+                        };
+                        var map = new google.maps.Map(document.getElementById('google_map'),mapOpt);
+                        var marker = new google.maps.Marker({
+                            position: map.getCenter(),
+                            map: map
+                        });
+                    }else{
+                        alert("Geocode was not successful for the following reason: " + status);
+                    }
+                });
+            </script>
+            <div id="google_map"></div>
+
+
+                <h1>Get in Touch with Us</h1>
+
+                <div class="form_container">
+
+
+
+
+                    <div class="address_container">
+
+                        <h2>Contacts</h2>
+
+                        <ul>
+                            <li id="location" class="address_icon">&nbsp;&nbsp;4421 Burke St. Burnaby<br>
+                            &nbsp;&nbsp;BC V5H 1C1 Canada</li>
+                            <li id="phone" class="address_icon"><a href="tel:+1-604-704-9853" class="hover">&nbsp;&nbsp;+1 (604) 704-9853</a></li>
+                            <li id="mail" class="address_icon"><a href="mailto:arisa.pirata@gmail.com" class="hover">&nbsp;&nbsp;info@nicecream_factory.com</a></li>
+                        </ul>
+
+                        <img src="../img/LOGO-4.png" alt="logo" id="logo">
+
+                    </div>
+                    <div class="form">
+
+                        <form>
+                        <label for="fname">Your Name*</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+                        <label for="email address">Your Email*</label>
+                        <input type="text" id="email" name="email" placeholder="Your Email Addresss.." required>
+
+                        <label for="message">Message*</label>
+                        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit" required>
+                      </form>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+            <footer class="contact_footer">
+
+                <ul>
+
+                    <li class="icon">
+                    <a href="http://facebook.com/arisa.hirata.79">
+                    <img src="../img/facebook.png" alt="Facebook Logo" class="social-icon">
+                    </a>
+                    </li>
+                    <li class="icon">
+                    <a href="http://twitter.com/alisapira">
+                    <img src="../img/twitter.png" alt="Twitter Logo" class="social-icon"></a>
+                    </li>
+                    <li class="icon">
+                    <a href="http://instagram.com/arisa_pirata">
+                    <img src="../img/instagram.png" alt="Instagram Logo" class="social-icon"></a>
+                    </li>
+
+                </ul>
+
+                <p><small>&copy; 2017 NiceCream Factory, Inc All rights reserved</small></p>
+
+            </footer>

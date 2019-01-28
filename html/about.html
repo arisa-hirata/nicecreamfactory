@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>NiceCream Factory</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/about.css">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+
+    <script>
+        (function($) {
+            $(function() {
+                var $header = $('#top-head');
+                // Nav Fixed
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() > 350) {
+                        $header.addClass('fixed');
+                    } else {
+                        $header.removeClass('fixed');
+                    }
+                });
+                // Nav Toggle Button
+                $('#nav-toggle').click(function(){
+                    $header.toggleClass('open');
+                });
+            });
+        })(jQuery);
+    </script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+
+        <header id="top-head" class="header">
+
+                <div class="inner">
+                    <div id="mobile-head">
+                        <a href="index.html"><img src="../img/LOGO-4%20white.png" class="logo"></a>
+                        <div id="nav-toggle">
+                            <div>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                <nav id="global-nav">
+
+                <ul class="navigation_bar">
+                  <li><a href="index.html">&nbsp;&nbsp;Home&nbsp;&nbsp;</a></li>
+                  <li><a href="about.html">&nbsp;&nbsp;About&nbsp;&nbsp;</a></li>
+                  <li><a href="menu.html">&nbsp;&nbsp;Menu&nbsp;&nbsp;</a></li>
+                  <li><a href="gallery.html">&nbsp;&nbsp;Gallery&nbsp;&nbsp;</a></li>
+                  <li><a href="contact.html">&nbsp;&nbsp;Contact&nbsp;&nbsp;</a></li>
+                </ul>
+
+                </nav>
+                </div>
+
+            </header>
+
+            <div class="about_container">
+
+                <div class="about">
+                    <img src="../img/Food-Trend-Rolled-Ice-Cream.jpg" alt="about photo" />
+                    <div class="discription">
+                        <h2>About NiceCream Factory</h2>
+                        <p>All Natural Ingredient Ice Cream being rolled as you wait. This Ice Cream is made fresh using real fruit and cream with no additional preservatives or chemical flavorings. It's so fresh, it tastes like you just picked the fruit straight from the field.</p>
+                    </div>
+                </div>
+
+                <h2 id="order_steps">Order Steps</h2>
+
+                <div class="order_step">
+
+
+
+                        <div class="view view-eighth">
+                            <img src="../img/about/photo7.jpg" class="images" alt="fruits"/>
+                            <div class="mask">
+
+                                <h2>STEP 1</h2>
+
+                                <h3>CHOOSE BASE FLAVORS</h3>
+                                <p>We have 4 basic flavors and seasonal flavors.</p>
+
+                            </div>
+                            <p id="title1"> STEP 1</p>
+
+                        </div>
+
+
+                        <div class="view view-eighth">
+                            <img src="../img/about/images%20(2).jpeg" class="images" alt="egg"/>
+                            <div class="mask">
+
+                                <h2>STEP 2</h2>
+
+                                <h3>MIX-IN</h3>
+                                <p>Add seasonal fruits, cookies and cholorates to base ice cream.</p>
+
+
+
+                            </div>
+                            <p id="title2"> STEP 2</p>
+                        </div>
+                        <div class="view view-eighth">
+                            <img src="../img/about/photo3.jpg" class="images" alt="sandwich"/>
+                            <div class="mask">
+
+                                <h2>STEP 3</h2>
+
+                                <h3>CHOOSE TOPPINGS</h3>
+                                <p>We have more than 40 regular toppings and  seasonal special toppings.</p>
+
+                            </div>
+                            <p id="title3"> STEP 3</p>
+
+                        </div>
+                        <div class="view view-eighth">
+                            <img src="../img/about/Hand-Rolled-Ice-Cream.jpg" class="images" alt="scone"/>
+                            <div class="mask">
+
+                                <h2>STEP 4</h2>
+
+                                <h3>CHOOSE SAUCE</h3>
+                                <p>We have more than 10 sauces</p>
+                            </div>
+                            <p id="title4"> STEP 4</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <footer class="about_footer">
+
+                <ul>
+
+                    <li class="icon">
+                    <a href="http://facebook.com/arisa.hirata.79">
+                    <img src="../img/facebook.png" alt="Facebook Logo" class="social-icon">
+                    </a>
+                    </li>
+                    <li class="icon">
+                    <a href="http://twitter.com/alisapira">
+                    <img src="../img/twitter.png" alt="Twitter Logo" class="social-icon"></a>
+                    </li>
+                    <li class="icon">
+                    <a href="http://instagram.com/arisa_pirata">
+                    <img src="../img/instagram.png" alt="Instagram Logo" class="social-icon"></a>
+                    </li>
+
+                </ul>
+
+                <p><small>&copy; 2017 NiceCream Factory, Inc All rights reserved</small></p>
+
+            </footer>
+
+
+    </body>
+</html>

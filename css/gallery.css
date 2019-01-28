@@ -1,0 +1,136 @@
+
+ * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F7F7F7;
+  color: #fff;
+  text-align: center;
+}
+body a,
+body a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+body p {
+  margin: 0;
+}
+
+
+h1 {
+ margin-top: 170px;
+ color: #4C4D4E;
+ font-size: 60px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.flexbox {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 100vw;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+  
+}
+
+.flexbox:hover img {
+  opacity: 0.28;
+}
+
+.flexbox .item {
+  position: relative;
+  width: 33.33%;
+}
+.flexbox .item img {
+  width: 100%;
+  display: block;
+  transition: all .8s;
+}
+.flexbox .item .title {
+  position: absolute;
+  top: 48%;
+  left: 0;
+  width: 100%;
+  padding: 0 3%;
+  font-size: 30px;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.42);
+}
+.flexbox .item:hover img {
+  opacity: 1;
+}
+
+
+/* RESPOSIVE */
+
+@media (min-width: 1300px) {
+  
+    .flexbox {
+        height: 65vw;
+        width: 60%;
+        margin-right: 10px;
+  }
+    .flexbox .item {
+  }
+}
+
+@media (max-width: 860px) {
+  .flexbox {
+    height: 220vw;
+  }
+  .flexbox .item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 667px) {
+  .flexbox {
+    height: auto;
+  }
+  .flexbox .item {
+    width: 100%;
+  }
+}
+
+
+VIEW SCSS CODERERUN
+
+
+
+/******************* FOOTER *******************************/
+
+.gallery_footer {
+    height: 100px;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    margin: 0 auto;
+    background-color: #fff;
+    
+}
+
+.gallery_footer p {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #4c4e4d;
+    font-size: 15px;
+}
+
+ .social-icon {
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.6;
+  
+}
+            
+.icon {        
+    display: inline-block;
+    margin-right: 10px;
+ }

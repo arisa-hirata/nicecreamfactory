@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>NiceCream Factory</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/menu.css">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+
+    <script>
+        (function($) {
+            $(function() {
+                var $header = $('#top-head');
+                // Nav Fixed
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() > 350) {
+                        $header.addClass('fixed');
+                    } else {
+                        $header.removeClass('fixed');
+                    }
+                });
+                // Nav Toggle Button
+                $('#nav-toggle').click(function(){
+                    $header.toggleClass('open');
+                });
+            });
+        })(jQuery);
+    </script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+
+        <header id="top-head" class="header">
+
+                <div class="inner">
+                    <div id="mobile-head">
+                        <a href="index.html"><img src="../img/LOGO-4%20white.png" class="logo"></a>
+                        <div id="nav-toggle">
+                            <div>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                <nav id="global-nav">
+
+                <ul class="navigation_bar">
+                  <li><a href="index.html">&nbsp;&nbsp;Home&nbsp;&nbsp;</a></li>
+                  <li><a href="about.html">&nbsp;&nbsp;About&nbsp;&nbsp;</a></li>
+                  <li><a href="menu.html">&nbsp;&nbsp;Menu&nbsp;&nbsp;</a></li>
+                  <li><a href="gallery.html">&nbsp;&nbsp;Gallery&nbsp;&nbsp;</a></li>
+                  <li><a href="contact.html">&nbsp;&nbsp;Contact&nbsp;&nbsp;</a></li>
+                </ul>
+
+                </nav>
+                </div>
+
+            </header>
+
+
+            <div id="container">
+
+                 <h1>Enjoy Your Sweet Time!</h1>
+
+             <div class="flexbox">
+              <div class="item">
+                <img src="../img/menu/americandream.png" />
+                <p class="title">American Dream</p>
+              </div>
+              <div class="item">
+                <img src="../img/menu/strawberry.png" />
+                <p class="title">Strawberry Dust</p>
+              </div>
+              <div class="item">
+                <img src="../img/menu/chocobanana.png" />
+                <p class="title">Chocolate Banana</p>
+              </div>
+              <div class="item">
+                <img src="../img/menu/tropical.png" />
+                <p class="title">Tropical Island</p>
+              </div>
+              <div class="item">
+                <img src="../img/menu/cookiemonster.png" />
+                <p class="title">Cookie Monster</p>
+              </div>
+              <div class="item">
+                <img src="../img/menu/hawaiianmonkey.png" />
+                <p class="title">Hawaiian Monkey</p>
+              </div>
+              <div class="item">
+                <img src="../img/menu/matcha.png" />
+                <p class="title">Matcha Green</p>
+              </div>
+              <div class="item">
+                <img src="../img/menu/blueberry.png" />
+                <p class="title">Blueberry Paradise</p>
+              </div>
+
+
+              </div>
+
+            </div>
+
+
+
+
+            <footer class="menu_footer">
+
+                <ul>
+
+                    <li class="icon">
+                    <a href="http://facebook.com/arisa.hirata.79">
+                    <img src=" ../img/facebook.png" alt="Facebook Logo" class="social-icon">
+                    </a>
+                    </li>
+                    <li class="icon">
+                    <a href="http://twitter.com/alisapira">
+                    <img src="../img/twitter.png" alt="Twitter Logo" class="social-icon"></a>
+                    </li>
+                    <li class="icon">
+                    <a href="http://instagram.com/arisa_pirata">
+                    <img src="../img/instagram.png" alt="Instagram Logo" class="social-icon"></a>
+                    </li>
+
+                </ul>
+
+                <p><small>&copy; 2017 NiceCream Factory, Inc All rights reserved</small></p>
+
+            </footer>

@@ -1,0 +1,159 @@
+body {
+    background-color: #F7F7F7;
+}
+
+
+
+ * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F7F7F7;
+  color: #4c4e4d;
+  text-align: center;
+}
+body a,
+body a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+body p {
+  margin: 0;
+}
+
+
+h1 {
+ margin-top: 170px;
+ color: #4e4c4d;
+ font-size: 60px;
+ font-family: 'Lato', sans-serif;
+}
+
+.flexbox {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 100vw;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  background-color: white;
+
+}
+
+.flexbox:hover img {
+  opacity: 0.28;
+}
+
+.flexbox:hover .item .title {
+  opacity: 0.28;
+}
+
+.flexbox .item {
+  position: relative;
+  width: 33.33%;
+}
+.flexbox .item img {
+  width: 100%;
+  display: block;
+  transition: all .8s;
+}
+.flexbox .item .title {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  width: 100%;
+  padding: 0 3%;
+  font-size: 30px;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.42);
+}
+.flexbox .item:hover img {
+  opacity: 1;
+}
+
+.flexbox .item:hover .title {
+  opacity: 1;
+}
+
+/* RESPOSIVE */
+
+@media (min-width: 1350px) {
+
+    .flexbox {
+        height: 58vw;
+        width: 60%;
+  }
+    .flexbox .item {
+        background-color: white;
+        padding-bottom: 88.5px;
+  }
+
+    .flexbox .item .title {
+      top: 70%;
+    }
+}
+
+@media (max-width: 900px) {
+  .flexbox {
+    height: 190vw;
+  }
+  .flexbox .item {
+    width: 50%;
+  }
+
+  .flexbox .item .title {
+      top: 90%;
+    }
+}
+
+@media (max-width: 667px) {
+  .flexbox {
+    height: auto;
+  }
+  .flexbox .item {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+}
+
+
+/******************* FOOTER *******************************/
+
+.menu_footer {
+    height: 100px;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.menu_footer p {
+    text-align: center;
+    color: #4c4e4d;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+
+ .social-icon {
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.6;
+
+}
+
+.icon {
+    display: inline-block;
+    margin-right: 10px;
+ }
